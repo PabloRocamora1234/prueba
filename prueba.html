@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Band Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col">
+
+<!-- Navbar -->
+<div class="bg-gray-900 text-white">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <a class="text-xl"><i class="fa fa-bars"></i></a>
+    <nav class="space-x-4">
+      <a href="#" class="hover:text-gray-300">HOME</a>
+      <a href="#band" class="hover:text-gray-300">BAND</a>
+      <a href="#tour" class="hover:text-gray-300">TOUR</a>
+      <a href="#contact" class="hover:text-gray-300">CONTACT</a>
+    </nav>
+
+    <!-- Dropdown MORE -->
+    <div class="relative group">
+      <button class="focus:outline-none flex items-center space-x-1">
+        MORE <i class="fa fa-caret-down"></i>
+      </button>
+      <!-- Menú de opciones que aparece al hacer hover -->
+      <div class="absolute hidden group-hover:block bg-gray-700 text-white mt-2 rounded shadow-lg p-2 w-48 z-10">
+        <a href="#" class="block hover:bg-gray-600 p-2 rounded">Merchandise</a>
+        <a href="#" class="block hover:bg-gray-600 p-2 rounded">Extras</a>
+        <a href="#" class="block hover:bg-gray-600 p-2 rounded">Media</a>
+      </div>
+    </div>
+
+    <a class="text-xl"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="container mx-auto my-8 flex-grow">
+  
+  <!-- Slideshow -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="relative group">
+      <img src="imagenes/los_angeles.jpg" class="w-full h-64 object-cover rounded-lg shadow-lg">
+      <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg w-full">
+        <h3 class="text-lg font-semibold">Los Angeles</h3>
+        <p>We had the best time playing at Venice Beach!</p>   
+      </div>
+    </div>
+    <div class="relative group">
+      <img src="imagenes/new_york.jpg" class="w-full h-64 object-cover rounded-lg shadow-lg">
+      <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg w-full">
+        <h3 class="text-lg font-semibold">New York</h3>
+        <p>The atmosphere in New York is lorem ipsum.</p>
+      </div>
+    </div>
+    <div class="relative group">
+      <img src="imagenes/chicago.jpg" class="w-full h-64 object-cover rounded-lg shadow-lg">
+      <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg w-full">
+        <h3 class="text-lg font-semibold">Chicago</h3>
+        <p>Thank you, Chicago - A night we won't forget.</p>    
+      </div>
+    </div>
+  </div>
+
+  <!-- Band Section -->
+  <div id="band" class="text-center my-16">
+    <h2 class="text-3xl font-bold">Black Star Echo</h2>
+    <p class="text-xl italic">We love music</p>
+    <p class="mt-4 max-w-2xl mx-auto">We have created a fictional band website. Lorem ipsum dolor sit amet...</p>
+    <div class="flex justify-center space-x-8 mt-8">
+      <div class="text-center">
+        <p class="font-semibold">Kai "Thunder" Rivas</p>
+        <img src="imagenes/chico1.jpg.webp" class="rounded-full h-40 w-40 mx-auto shadow-lg">
+      </div>
+      <div class="text-center">
+        <p class="font-semibold">Lena "Bluefire" Martín</p>
+        <img src="imagenes/chica1.jpg.webp" class="rounded-full h-40 w-40 mx-auto shadow-lg">
+      </div>
+      <div class="text-center">
+        <p class="font-semibold">Jesse "Skye" Torres</p>
+        <img src="imagenes/chico2.jpg.webp" class="rounded-full h-40 w-40 mx-auto shadow-lg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Tour Section -->
+  <div id="tour" class="my-16 text-center">
+    <h2 class="text-3xl font-bold">TOUR DATES</h2>
+    <p class="text-lg italic">Remember to book your tickets!</p>
+    <ul class="mt-8 space-y-4">
+      <li class="text-gray-600">September <span class="text-red-500">Sold out</span></li>
+      <li class="text-gray-600">October <span class="text-red-500">Sold out</span></li>
+      <li class="text-gray-600">November <span class="text-green-500">3</span></li>
+    </ul>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <!-- Tour Cards -->
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="imagenes/new_york.jpg" class="w-full h-48 object-cover rounded">
+        <div class="mt-4">
+          <p class="text-lg font-semibold">New York</p>
+          <p>Fri 27 Nov 2016</p>
+          <p class="mt-2">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="imagenes/paris.jpg" class="w-full h-48 object-cover rounded">
+        <div class="mt-4">
+          <p class="text-lg font-semibold">Paris</p>
+          <p>Sat 28 Nov 2016</p>
+          <p class="mt-2">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img src="imagenes/san_francisco.jpg" class="w-full h-48 object-cover rounded">
+        <div class="mt-4">
+          <p class="text-lg font-semibold">San Francisco</p>
+          <p>Sun 29 Nov 2016</p>
+          <p class="mt-2">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="my-16 text-center">
+    <h2 class="text-3xl font-bold">CONTACT</h2>
+    <p class="italic">Fan? Drop a note!</p>
+    
+    <div class="mt-8 flex flex-col items-center space-y-8">
+        
+        <!-- Formulario centrado -->
+        <div class="w-full max-w-md">
+            <form action="/action_page.php" target="_blank" class="space-y-4">
+                <input type="text" placeholder="Name" required name="Name" class="w-full p-2 border rounded">
+                <input type="text" placeholder="Email" required name="Email" class="w-full p-2 border rounded">
+                <input type="text" placeholder="Message" required name="Message" class="w-full p-2 border rounded">
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded w-full">SEND</button>
+            </form>
+        </div>
+
+        <!-- Información de contacto centrada -->
+        <div class="text-center space-y-2">
+            <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+            <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+            <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center p-4 w-full mt-auto">
+  <div class="space-x-4 text-xl">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</footer>
+
+</body>
+</html>
